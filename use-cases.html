@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Use Cases | The Agentic Blueprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .accent-gradient { background: linear-gradient(135deg, #d977ea 0%, #7c3aed 100%); }
+        .text-gradient { background: linear-gradient(135deg, #fbcfe8, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .blueprint-card { transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .blueprint-card:hover { border-color: #7c3aed; transform: translateY(-4px); background: rgba(124, 58, 237, 0.05); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <a href="index.html" class="font-bold text-xl tracking-tighter text-white">Open<span class="text-purple-500">Claw</span></a>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="guide.html" class="hover:text-white transition">Reference Guide</a>
+            <a href="briefing.html" class="hover:text-white transition">Daily Briefing</a>
+            <a href="use-cases.html" class="text-purple-400 hover:text-purple-300 transition">Use Cases</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 text-center overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
+            <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-600 rounded-full blur-[140px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-600 rounded-full blur-[140px]"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <span class="px-3 py-1 text-xs font-semibold tracking-widest text-purple-400 uppercase border border-purple-500/30 rounded-full">Deployment Research</span>
+            <h1 class="mt-6 text-6xl md:text-8xl font-extrabold tracking-tighter text-white leading-none">
+                The <span class="text-gradient">Utility</span> Matrix
+            </h1>
+            <p class="mt-8 text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                From solo-operators to enterprise swarms. Explore the most promising architectural patterns for OpenClaw.
+            </p>
+        </div>
+    </section>
+
+    <!-- Category Grid -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Personal OS -->
+            <div class="space-y-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-10 h-10 accent-gradient rounded-lg flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white">Personal Life OS</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="blueprint-card glass p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Cognitive Load Offloading</h3>
+                        <p class="text-gray-400 text-sm mb-4">Automating the "administrative tax" of existing. Using <strong>Routines</strong> to manage the invisible labor of life.</p>
+                        <div class="p-4 bg-white/5 rounded-xl border-l-2 border-purple-500">
+                            <span class="text-xs font-bold text-purple-400 uppercase block mb-1">The Build</span>
+                            <p class="text-xs text-gray-300 font-mono italic">Routines(Cron: Daily) &rarr; Scan Calendar + Email &rarr; Synthesis Agent &rarr; Push "Today's Focus" to LockScreen.</p>
+                        </div>
+                    </div>
+
+                    <div class="blueprint-card glass p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">The Digital Health Strategist</h3>
+                        <p class="text-gray-400 text-sm mb-4">Correlating biometric data with performance and mood to optimize decision-making windows.</p>
+                        <div class="p-4 bg-white/5 rounded-xl border-l-2 border-purple-500">
+                            <span class="text-xs font-bold text-purple-400 uppercase block mb-1">The Build</span>
+                            <p class="text-xs text-gray-300 font-mono italic">Routines(Weekly) &rarr; HealthKit Data + Sleep Logs &rarr; Dreams(Simulate Correlation) &rarr; Output: "Ideal Work-Week Blueprint".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise Swarms -->
+            <div class="space-y-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-10 h-10 accent-gradient rounded-lg flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-// la text-gray-300- a-2 2 0 01-2-2m2 2h-5" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white">Enterprise Swarms</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="blueprint-card glass p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Autonomous Market Intel Swarms</h3>
+                        <p class="text-gray-400 text-sm mb-4">Replacing traditional research cycles with a continuous, real-time analysis loop of the entire competitive landscape.</p>
+                        <div class="p-4 bg-white same la text-gray-300 rounded-xl border-l-2 border-purple-500">
+                            <span class="text-xs font-bold text-purple-400 uppercase block mb-1">The Build</span>
+                            <p class="text-xs text-gray-300 font-mono italic">Dispatch(Master) &rarr; [Scraper Agent, Sentiment Agent, Pricing Agent] &rarr; Synthesis Agent &rarr; Slack Alerts.</p>
+                        </div>
+                    </div>
+
+                    <div class="blueprint-card glass p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Self-Healing Infrastructure</h3>
+                        <p class="text-gray-400 text-sm mb-4">Using Claude Code's terminal access to detect, diagnose, and patch infrastructure bugs autonomously.</p>
+                        <div class="p-4 bg-white/5 rounded-xl border-l-2 border-purple-500">
+                            <span class="text-xs font-bold text-purple-400 uppercase block mb-1">The Build</span>
+                            <p class="text-xs text-gray-300 font-mono italic">Routines(Webhook: Error 500) &rarr; Claude Code(Terminal Access) &rarr; Debugging Loop &rarr; PR Generation &rarr; Human Approval.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Research Section -->
+    <section class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="glass p-12 rounded-3xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl font-bold text-white mb-8">The High-Leverage Framework</h2>
+                <p class="text-gray-400 mb-12 leading-relaxed">
+                    The most successful OpenClaw deployments follow a specific hierarchy of agency. They don't just "use AI"; they architect the <span class="text-white">flow of information</span>.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="space-y-4">
+                        <div class="text-purple-500 font-bold text-lg">01. The Capture Phase</div>
+                        <p class="text-sm text-gray-400">Leveraging <strong>Routines</strong> to gather raw data without human intervention. This is the "Sensory System."</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="text-purple-500 font-bold text-lg">02. The Synthesis Phase</div>
+                        <p class="text-sm text-gray-400">Using <strong>Dreams</strong> and <strong>Dispatch</strong> to find patterns, simulate outcomes, and compress knowledge.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="text-purple-500 font-bold text-lg">0 la la la l la l text-gray-300- 03. The Execution Phase</div>
+                        <p class="text-sm text-gray-400">Utilizing <strong>Claude Code</strong> and <strong>OS Agency</strong> to turn the synthesis into a tangible result (Code, Email, File).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 text-center border-t border-white/10 mt-20">
+        <p class="text-gray-500 text-sm italic">
+            "The most powerful tool is the one that doesn't require your attention to work."
+        </p>
+    </footer>
+
+</body>
+</html>
