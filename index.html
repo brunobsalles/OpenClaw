@@ -11,6 +11,7 @@
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .accent-gradient { background: linear-gradient(135deg, #d977ea 0%, #7c3aed 100%); }
         .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #7c3aed; }
+        .glow-text { text-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
     </style>
 </head>
 <body class="antialiased">
@@ -75,6 +76,81 @@
                 <p class="text-gray-400 text-sm leading-relaxed">
                     Using the Mythos engine, Claude can scan legacy codebases and financial infrastructure to find critical vulnerabilities that have remained hidden for decades.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claude Code Deep Dive -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-white mb-4">Claude Code: The OS Interface</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Beyond a simple CLI for developers, Claude Code represents a shift toward "Direct-to-OS" interaction. It doesn't just suggest changes; it executes them.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Routines -->
+            <div class="glass p-8 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all"></div>
+                <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="w-2 h-8 accent-gradient rounded-full"></span> Routines
+                </h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Pre-defined, automated sequences of agentic actions that trigger on a schedule or an event. The "Set and Forget" of AI agency.
+                </p>
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                        <span class="text-purple-400 text-xs font-bold uppercase">General Use Case</span>
+                        <p class="text-sm text-gray-300 mt-1"><strong>The Digital Morning Paper:</strong> Every day at 7 AM, Claude scans your emails, calendar, and news feeds to generate a prioritized 1-page briefing on your desk.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                        <span class="text-purple-400 text-xs font-bold uppercase">Productivity Use Case</span>
+                        <p class="text-sm text-gray-300 mt-1"><strong>Automatic Expense Auditor:</strong> Weekly scanning of PDFs/receipts in a folder, categorization, and updating a master financial spreadsheet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dispatch -->
+            <div class="glass p-8 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all"></div>
+                <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="w-2 h-8 accent-gradient rounded-full"></span> Dispatch
+                </h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Intelligent task routing. Dispatch allows a primary agent to analyze a complex request and delegate sub-tasks to a swarm of specialized agents.
+                </p>
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                        <span class="text-purple-400 text-xs font-bold uppercase">General Use Case</span>
+                        <p class="text-sm text-gray-300 mt-1"><strong>The Personal COO:</strong> Request a complex trip to Tokyo. Dispatch routes tasks to a <em>Flight Agent</em>, a <em>Hotel Agent</em>, and a <em>Cultural Guide Agent</em>, merging their results into one itinerary.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                        <span class="text-purple-400 text-xs font-bold uppercase">Project Use Case</span>
+                        <p class="text-sm text-gray-300 mt-1"><strong>Content Engine:</strong> One prompt triggers a researcher, a writer, an editor, and a social media strategist to produce a full campaign across 4 platforms.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dreams -->
+            <div class="glass p-8 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all"></div>
+                <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="w-2 h-8 accent-gradient rounded-full"></span> Dreams
+                </h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Background synthesis. Dreams allow the AI to process information, simulate outcomes, and refine ideas while the user is inactive.
+                </p>
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                        <span class="text-purple-400 text-xs font-bold uppercase">General Use Case</span>
+                        <p class="text-sm text-gray-300 mt-1"><strong>The Creative Catalyst:</strong> Give Claude a mood board and a rough goal. While you sleep, "Dreams" synthesize these into three distinct, fully-fleshed-out brand strategies.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                        <span class="text-purple-400 text-xs font-bold uppercase">Research Use Case</span>
+                        <p class="text-sm text-gray-300 mt-1"><strong>Pattern Discovery:</strong> Over a weekend, Claude analyzes 1,000 customer feedback entries to identify subtle, non-obvious trends that a human might miss.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
