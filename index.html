@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Agentic Manual: Mastering Claude Code & OS Agency</title>
+    <title>OpenClaw | The Agentic OS</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .accent-gradient { background: linear-gradient(135deg, #d977ea 0%, #7c3aed 100%); }
         .text-gradient { background: linear-gradient(135deg, #fbcfe8, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .guide-section { border-left: 1px solid rgba(124, 58, 237, 0.3); padding-left: 2rem; margin-left: 1rem; }
-        code { font-family: 'Fira Code', monospace; }
-        .case-study { background: rgba(124, 58, 237, 0.05); border-left: 4px solid #7c3aed; }
+        .hero-glow { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%; pointer-events: none; opacity-20; }
     </style>
 </head>
 <body class="antialiased">
@@ -22,267 +20,76 @@
     <nav class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-between items-center">
         <div class="font-bold text-xl tracking-tighter text-white">Open<span class="text-purple-500">Claw</span></div>
         <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-            <a href="#overview" class="hover:text-white transition">Overview</a>
-            <a href="#claude-code" class="hover:text-white transition">Claude Code</a>
-            <a href="#routines" class="hover:text-white transition">Routines</a>
-            <a href="#dispatch" class="hover:text-white transition">Dispatch</a>
-            <a href="#dreams" class="hover:text-white transition">Dreams</a>
+            <a href="index.html" class="text-white transition">Home</a>
+            <a href="guide.html" class="hover:text-white transition">Reference Guide</a>
+            <a href="briefing.html" class="hover:text-white transition">Daily Briefing</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 px-6 text-center overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
+    <section class="relative pt-40 pb-24 px-6 text-center overflow-hidden">
+        <div class="hero-glow">
             <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-600 rounded-full blur-[140px]"></div>
             <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-600 rounded-full blur-[140px]"></div>
         </div>
         
         <div class="relative z-10 max-w-4xl mx-auto">
-            <span class="px-3 py-1 text-xs font-semibold tracking-widest text-purple-400 uppercase border border-purple-500/30 rounded-full">Deep-Dive Guide 2026</span>
-            <h1 class="mt-6 text-6xl md:text-8xl font-extrabold tracking-tighter text-white leading-none">
-                The <span class="text-gradient">Agentic</span> Manual
+            <span class="px-3 py-1 text-xs font-semibold tracking-widest text-purple-400 uppercase border border-purple-500/30 rounded-full">Now Live: Agentic Era</span>
+            <h1 class="mt-6 text-6xl md:text-9xl font-extrabold tracking-tighter text-white leading-none">
+                The <span class="text-gradient">Agentic</span> OS
             </h1>
             <p class="mt-8 text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
-                A comprehensive technical and strategic guide to the new era of OS-level agency. From terminal execution to autonomous "dreaming."
+                Moving beyond chatbots. Orchestrate a swarm of specialized agents to automate your professional life andcognitive load.
             </p>
-        </div>
-    </section>
-
-    <!-- Quick Overview -->
-    <section id="overview" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="glass p-8 rounded-2xl border-t-4 border-t-purple-500">
-                <h3 class="text-lg font-bold text-white mb-2">Artifacts</h3>
-                <p class="text-gray-400 text-sm">Real-time rendering of UI/UX. Moving from static code to live interactive prototypes in seconds.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl border-t-4 border-t-purple-500">
-                <h3 class="text-lg font-bold text-white mb-2">OS Agency</h3>
-                <p class="text-gray-400 text-sm">Computer Use API. The ability to navigate screens, click elements, and manage files across any app.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl border-t-4 border-t-purple-500">
-                <h3 class="text-lg font-bold text-white mb-2">MCP</h3>
-                <p class="text-gray-400 text-sm">Model Context Protocol. A standardized layer allowing different AI agents to share state and tools.</p>
+            <div class="mt-12 flex flex-col md:flex-row gap-4 justify-center">
+                <a href="guide.html" class="px-8 py-4 accent-gradient text-white font-bold rounded-full hover:opacity-90 transition shadow-lg shadow-purple-500/20">
+                    Start Reference Guide
+                </a>
+                <a href="briefing.html" class="px-8 py-4 glass text-white font-bold rounded-full hover:bg-white/10 transition">
+                    Read Daily Briefing
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Claude Code Detailed Section -->
-    <section id="claude-code" class="py-24 px-6 max-w-5xl mx-auto">
-        <div class="flex items-center gap-4 mb-12">
-            <div class="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-            </div>
-            <h2 class="text-4xl font-bold text-white">Claude Code: The Terminal OS</h2>
-        </div>
-
-        <div class="guide-section space-y-16">
-            <div>
-                <h3 class="text-2xl font-semibold text-purple-300 mb-4">What is it actually?</h3>
-                <p class="text-gray-300 leading-relaxed mb-4">
-                    Claude Code is not a plugin or a wrapper; it is a <span class="text-white font-semibold">terminal-resident agent</span> with full read/write access to your local environment. It operates on a continuous loop of <span class="text-purple-400 font-mono">Perceive &rarr; Plan &rarr; Execute &rarr; Verify</span>.
-                </p>
-                <div class="glass p-6 rounded-xl font-mono text-xs text-purple-200">
-                    <span class="text-gray-500">// The Execution Loop</span><br>
-                    1. <span class="text-indigo-400">Read</span>: Analyzes file structure and current logs.<br>
-                    2. <span class="text-indigo-400">Reason</span>: Decides if a change is needed based on a goal.<br>
-                    3. <span class="text-indigo-400">Tool Use</span>: Executes <code>sed</code>, <code>grep</code>, or <code>npm test</code>.<br>
-                    4. <span class="text-indigo-400">Verify</span>: Checks output. If the test fails, it loops back to Step 2.
+    <!-- Feature Highlights -->
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl text-center group hover:border-purple-500 transition">
+                <div class="w-12 h-12 accent-gradient rounded-xl mx-auto mb-6 flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                 </div>
+                <h3 class="text-xl font-bold text-white mb-3">Routines</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Proactive, event-driven agency. The AI works while you sleep, updating you only when a result is ready.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="case-study p-6 rounded-2xl">
-                    <h4 class="text-white font-bold mb-2">The Developer Flow</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Instead of "Copy-Paste" errors, you give a goal: <br>
-                        <span class="italic text-gray-300">"Refactor the auth logic to use JWT and update all tests to pass."</span><br>
-                        Claude Code identifies all impacted files, applies changes, runs the test suite, and only notifies you when the build is green.
-                    </p>
+            <div class="glass p-8 rounded-3xl text-center group hover:border-purple-500 transition">
+                <div class="w-12 h-12 accent-gradient rounded-xl mx-auto mb-6 flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
                 </div>
-                <div class="case-study p-6 rounded-2xl">
-                    <h4 class="text-white font-bold mb-2">The Non-Code Flow</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Use it as a <span class="text-purple-400">File System Architect</span>.<br>
-                        <span class="italic text-gray-300">"Find all PDFs in my downloads from 2024, extract the invoice amounts, and create a CSV summary."</span><br>
-                        It uses the terminal to manipulate data without needing a GUI.
-                    </p>
-                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Dispatch</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Swarm orchestration. A master agent decomposes complex goals into specialized sub-tasks for a team of AI specialists.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Routines Section -->
-    <section id="routines" class="py-24 px-6 max-w-5xl mx-auto bg-white/5 rounded-3xl">
-        <div class="flex items-center gap-4 mb-12">
-            <div class="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </div>
-            <h2 class="text-4xl font-bold text-white">Routines: Deterministic Agency</h2>
-        </div>
-
-        <div class="guide-section space-y-12">
-            <p class="text-gray-300 leading-relaxed">
-                Routines transition AI from <span class="text-white">Reactive</span> (waiting for a prompt) to <span class="text-white">Proactive</span> (triggered by time or events). A Routine is a sequence of tool-calls that the agent executes autonomously.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <h3 class="text-xl font-semibold text-purple-300">The Logic of a Routine</h3>
-                    <ul class="space-y-4 text-sm text-gray-400">
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Trigger:</strong> A cron job, a webhook, or a specific file change.</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Contextualization:</strong> Agent reads "State" (what happened since the last run?).</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Execution:</strong> Executes the sequence (e.g., Search &rarr; Summarize &rarr; Email).</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Handoff:</strong> If an anomaly is found, it "wakes" the human with a summary.</span>
-                        </li>
-                    </ul>
+            <div class="glass p-8 rounded-3xl text-center group hover: la text-gray-400 transition">
+                <div class="w-12 h-12 accent-gradient rounded-xl mx-auto mb-6 flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 13.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
                 </div>
-                <div class="glass p-8 rounded-2xl">
-                    <h4 class="text-white font-bold mb-4 italic">Real-World Implementation</h4>
-                    <div class="space-y-6">
-                        <div>
-                            <span class="text-xs font-bold text-purple-400 uppercase">Life Administration</span>
-                            <p class="text-sm text-gray-300 mt-1"><strong>The "Health Sync":</strong> Every Sunday, Claude scans your wearable data (Apple Health/Google Fit), correlates it with your calendar (stressful meetings vs. sleep), and writes a 3-point recommendation for your next week's schedule.</p>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-purple-400 uppercase">Business Intelligence</span>
-                            <p class="text-sm text-gray-300 mt-1"><strong>The Competitor Watch:</strong> Hourly monitoring of 5 key competitor blogs. It doesn't just alert you; it analyzes if their new feature competes with your current roadmap and flags the risk in a Slack channel.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dispatch Section -->
-    <section id="dispatch" class="py-24 px-6 max-w-5xl mx-auto">
-        <div class="flex items-center gap-4 mb-12">
-            <div class="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-            </div>
-            <h2 class="text-4xl font-bold text-white">Dispatch: The Swarm Orchestrator</h2>
-        </div>
-
-        <div class="guide-section space-y-12">
-            <p class="text-gray-300 leading-relaxed">
-                Dispatch is the transition from <span class="text-white">Single-Model AI</span> to <span class="text-white">Multi-Agent Systems (MAS)</span>. Instead of one agent trying to be a jack-of-all-trades, Dispatch acts as a "General Manager" that breaks a complex goal into a set of specialized sub-tasks.
-            </p>
-
-            <div class="glass p-8 rounded-3xl relative overflow-hidden">
-                <div class="flex flex-col md:flex-row gap-12 items-start">
-                    <div class="flex-1 space-y-6">
-                        <h3 class="text-xl font-semibold text-purple-300">The Dispatch Workflow</h3>
-                        <div class="space-y-4">
-                            <div class="flex gap-4 items-start">
-                                <div class="bg-purple-500/20 p-2 rounded text-purple-400 font-mono text-xs">01</div>
-                                <p class="text-sm text-gray-400"><strong>Decomposition:</strong> The Master Agent decomposes "Plan a $10k Marketing Launch" into 5 atomic goals (Budget, Creative, Channels, Metrics, Timeline).</p>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="bg-purple-500/20 p-2 rounded text-purple-400 font-mono text-xs">02</div>
-                                <p class="text-sm text-gray-400"><strong>Routing:</strong> Tasks are dispatched to specialists (e.g., the "Financial Agent" gets the budget, the "Creative Agent" gets the assets).</p>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="bg-purple-500/20 p-2 rounded text-purple-400 font-mono text-xs">03</div>
-                                <p class="text-sm text-gray-400"><strong>Synthesis:</strong> The Master Agent collects all outputs, checks for contradictions, and merges them into a final executive plan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-1 w-full max-w-md">
-                        <div class="case-study p-6 rounded-2xl">
-                            <h4 class="text-white font-bold mb-2">High-Value Use Case: The Family Office</h4>
-                            <p class="text-sm text-gray-400 leading-relaxed">
-                                Managing a family's entire digital life. Dispatch coordinates:
-                                <br>• <span class="text-purple-400">Legal Agent</span>: Reviews contracts.
-                                <br>• <span class="text-purple-400">Travel Agent</span>: Manages flights/hotels.
-                                <br>• <span class="text-purple-400">Tax Agent</span>: Tracks deductible expenses.
-                                <br>• <span class="text-purple-400">Educational Agent</span>: Curates learning materials for kids.
-                                <br>
-                                <span class="font-bold text-white">Result:</span> One single interface for the human to manage a multi-disciplinary team.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dreams Section -->
-    <section id="dreams" class="py-24 px-6 max-w-5xl mx-auto bg-white/5 rounded-3xl">
-        <div class="flex items-center gap-4 mb-12">
-            <div class="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 13.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                </svg>
-            </div>
-            <h2 class="text-4xl font-bold text-white">Dreams: Asynchronous Synthesis</h2>
-        </div>
-
-        <div class="guide-section space-y-12">
-            <p class="text-gray-300 leading-relaxed">
-                "Dreams" represent the agent's ability to use <strong>idle compute</strong>. Instead of shutting down when a task is finished, the agent enters a background state where it simulates, reorganizes, and refines its internal model of your goals.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <h3 class="text-xl font-semibold text-purple-300">What happens during a "Dream"?</h3>
-                    <ul class="space-y-4 text-sm text-gray-400">
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Knowledge Compression:</strong> Summarizing 100 separate interactions into a single "Preference Profile."</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Simulation:</strong> "If the user decides to pivot the business to B2B, what are the 3 biggest risks I can foresee based on current data?"</span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-purple-500">●</span>
-                            <span><strong>Blindspot Detection:</strong> Searching for contradictions in the user's requests over the last 30 days.</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="glass p-8 rounded-2xl">
-                    <h4 class="text-white font-bold mb-4 italic">The Strategic Value</h4>
-                    <div class="space-y-6">
-                        <div>
-                            <span class="text-xs font-bold text-purple-400 uppercase">Intellectual Sparring</span>
-                            <p class="text-sm text-gray-300 mt-1">You provide a thesis for a new venture. While you are offline, Claude "dreams" through 10 failure scenarios, simulating competitor responses and market crashes, then presents you with a <span class="text-white">"Stress Test Report"</span> upon your return.</p>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-purple-400 uppercase">Cognitive Load Reduction</span>
-                            <p class="text-sm text-gray-300 mt-1">Instead of you spending 4 hours organizing your research, the AI dreams the connections between disparate notes, creating a <strong>knowledge graph</strong> that reveals a new insight you hadn't seen.</p>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Dreams</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Asynchronous synthesis. AI using idle compute to simulate scenarios and reorganize knowledge for strategic insight.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-20 text-center border-t border-white/10 mt-20">
+    <footer class="py-20 text-center border-t border-white/10">
         <p class="text-gray-500 text-sm italic">
-            "The transition from tools to operators is here. Welcome to the age of agency."
+            "From tools to operators. The transition is complete."
         </p>
-        <div class="mt-6 flex justify-center gap-4">
-            <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
-            <div class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
-            <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
-        </div>
     </footer>
 
 </body>
